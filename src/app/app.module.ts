@@ -14,6 +14,7 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { StoreComponent } from './store/store.component';
 import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
+import { EmpListComponent } from './emp-list/emp-list.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { LoginComponent } from './login/login.component';
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'login', component: LoginComponent },
+      { path: 'employees', component: EmpListComponent },
     ]),
   ],
   declarations: [
@@ -39,6 +41,7 @@ import { LoginComponent } from './login/login.component';
     StoreComponent,
     AdminComponent,
     LoginComponent,
+    EmpListComponent,
   ],
   bootstrap: [AppComponent],
 })
