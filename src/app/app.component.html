@@ -1,8 +1,5 @@
-<app-top-bar></app-top-bar>
-
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+<app-store *ngIf="storeDisplay"></app-store>
+<app-admin *ngIf="adminDisplay"></app-admin>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
