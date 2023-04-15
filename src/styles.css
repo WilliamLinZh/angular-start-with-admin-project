@@ -1,5 +1,6 @@
 /* Global Styles */
-/* @import '~bootstrap/dist/css/bootstrap.css'; */
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
 
 * {
   font-family: 'Roboto', Arial, sans-serif;

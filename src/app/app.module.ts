@@ -13,6 +13,7 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { StoreComponent } from './store/store.component';
 import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { AdminComponent } from './admin/admin.component';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'login', component: LoginComponent },
     ]),
   ],
   declarations: [
@@ -36,6 +38,7 @@ import { AdminComponent } from './admin/admin.component';
     ShippingComponent,
     StoreComponent,
     AdminComponent,
+    LoginComponent,
   ],
   bootstrap: [AppComponent],
 })
