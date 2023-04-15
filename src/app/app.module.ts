@@ -16,6 +16,8 @@ import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { EmpListComponent } from './emp-list/emp-list.component';
 
+import { AuthGuardService } from './auth-guard.service';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -27,7 +29,11 @@ import { EmpListComponent } from './emp-list/emp-list.component';
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'login', component: LoginComponent },
-      { path: 'employees', component: EmpListComponent },
+      {
+        path: 'employees',
+        component: EmpListComponent,
+        canActivate: [AuthGuardService],
+      },
     ]),
   ],
   declarations: [
